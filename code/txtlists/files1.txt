@@ -1,0 +1,2 @@
+../images/fc1.png
+../images/fc2.png
