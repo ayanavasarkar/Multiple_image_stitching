@@ -9,6 +9,7 @@ class matchers:
 		#search_params = dict(checks=50)
 		#self.flann = cv2.FlannBasedMatcher(index_params, search_params)
 
+		#using ORB instead of SURF to speed up the process
 		self.orb = cv2.ORB()
 
 		self.bf = cv2.BFMatcher()
