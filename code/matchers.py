@@ -10,6 +10,7 @@ class matchers:
 		#self.flann = cv2.FlannBasedMatcher(index_params, search_params)
 
 		#using ORB instead of SURF to speed up the process
+		# and using Brute Force Matcher instead of FLANN. The latter works only with SURF or SIFT and BF is faster and accurate for this
 		self.orb = cv2.ORB()
 
 		self.bf = cv2.BFMatcher()
