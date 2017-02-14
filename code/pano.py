@@ -110,7 +110,7 @@ class Stitch:
 				except:
 					pass
 		# cv2.imshow("waRPED mix", warpedImage)
-		# cv2.waitKey()
+		# cv2.waitKey(0)
 		return warpedImage
 
 
