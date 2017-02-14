@@ -14,6 +14,7 @@ class matchers:
 		self.orb = cv2.ORB()
 
 		self.bf = cv2.BFMatcher()
+	
 	def match(self, i1, i2, direction=None):
 		imageSet1 = self.getFeatures(i1)
 		imageSet2 = self.getFeatures(i2)
@@ -23,7 +24,7 @@ class matchers:
 			imageSet1['des'],
 			k=2
 			)
-		good = []
+		good = []		#for keeping the good features
 		for i , (m, n) in enumerate(matches):
 			if m.distance < 0.7*n.distance:
 				good.append((m.trainIdx, m.queryIdx))
